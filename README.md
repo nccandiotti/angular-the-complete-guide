@@ -81,3 +81,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - in stylesUrl can also reference multiple style sheet
 - can ALSO eliminate styleUrls property and make a styles(plural) property, in array can write strings of inline styles
 - **cannot use inline and external files**
+
+### Selectors
+
+- should be **unique**
+- cannot select by id or pseudoselectors
+- typically create elements and select by elements
