@@ -2,3 +2,7 @@ p {
   font-weight: bold;
   color: red;
 }
+* {
+  border: 1px solid red;
+  background: #e9b5b5;
+}

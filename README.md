@@ -87,3 +87,24 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - should be **unique**
 - cannot select by id or pseudoselectors
 - typically create elements and select by elements
+- **selectors are what you call the custom component when inserting it in other components**
+
+### Databinding
+
+1. String Interpolation {{ data }} (output data)
+2. Property Binding [property]="data (output data)
+3. Event Binding (event)="expression" (reaction to user events)
+4. Combination of Both: **Two Way Data Binding** [(ngModel)]="data
+
+### String Interpolation
+
+- only single line expressions or ternarys (no code blocks)
+- output _must_ be a string
+- Steps
+
+  1. In component.ts, define properties and any methods in the export (bottom of component)
+     <img src="./assets/pic1.png">
+
+  2. in component.html, interpolate using {{}} syntax
+
+     <img src="./assets/pic2.png">
