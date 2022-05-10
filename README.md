@@ -54,3 +54,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - just creating the file is not enough, components need to be "registered" in the AppModule
 - it needs to be registered in the "declarations" within the AppModule; for TypeScript to find it, the component also needs to be imported at the top. Write the file path **_without_** .ts extension on the end
+
+### custom Components
+
+- once a component is added to the module, you can use it as a custom component by creating a custom tag
+
+  - i.e. <app-server> </app-server>
+  - above will display that component
+
+  ### Creating components in CLI
+
+  - **LEAVE NG SERVER RUNNING - IMPORTANT**
+  - in CLI : ng g c (ng generate component)
+    - creates component ts file, html, spec, and css (4 files)
+    - also adds to declarations in AppModule, double check though
