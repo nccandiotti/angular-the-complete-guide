@@ -62,9 +62,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - i.e. <app-server> </app-server>
   - above will display that component
 
-  ### Creating components in CLI
+### Creating components in CLI
 
-  - **LEAVE NG SERVER RUNNING - IMPORTANT**
-  - in CLI : ng g c (ng generate component)
-    - creates component ts file, html, spec, and css (4 files)
-    - also adds to declarations in AppModule, double check though
+- **LEAVE NG SERVER RUNNING - IMPORTANT**
+- in CLI : ng g c (ng generate component)
+  - creates component ts file, html, spec, and css (4 files)
+  - also adds to declarations in AppModule, double check though
+
+### Component Templates
+
+- template property is mandatory at all times
+- inline or point to external file
+- can either link templateUrl to path of html file OR in "" put html code in the file. If it's multiline, use backticks and template expressions
+
+### Component Styles
+
+- traditional css in that components name.component.css file
+- in stylesUrl can also reference multiple style sheet
+- can ALSO eliminate styleUrls property and make a styles(plural) property, in array can write strings of inline styles
+- **cannot use inline and external files**
