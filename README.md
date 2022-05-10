@@ -25,4 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
 # angular-the-complete-guide
+
+# Notes
+
+- main TS starts and boostraps (passes app.modul.ts) as an argument
+
+### Components
+
+- root component holds app, other components are nested in the app component
+- each component has its own template, html, styling, and own logic - separation of concerns
+- all app related content lives in app folder
+- a component is a typescript class that angular can instantiate
+- class decorators enhance components
+  - attatched by adding @ infront of them and importing them at the type so that it is known to typescript (i.e., import { Component } from '@angular/core';)
+- angular uses components to build web pages and modules to "bundle" them into packages
+
+### decorators
+
+- attatched by adding @ and importing at top of file
+- informaton stored as metadata that tells angular what to do with the class
+  configure by passing JS object
+- has _selector_ which is what allows you to use it in other components
+- has _templateUrl_ that points to the html file for that component with a _relative path_
+
+### modules
+
+- just creating the file is not enough, components need to be "registered" in the AppModule
+- it needs to be registered in the "declarations" within the AppModule; for TypeScript to find it, the component also needs to be imported at the top. Write the file path _without_ .ts extension on the end
