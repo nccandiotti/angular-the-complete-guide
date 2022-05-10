@@ -47,10 +47,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - attatched by adding @ and importing at top of file
 - informaton stored as metadata that tells angular what to do with the class
   configure by passing JS object
-- has _selector_ which is what allows you to use it in other components
-- has _templateUrl_ that points to the html file for that component with a _relative path_
+- has **selector** which is what allows you to use it in other components
+- has **templateUrl** that points to the html file for that component with a **relative path**
 
 ### modules
 
 - just creating the file is not enough, components need to be "registered" in the AppModule
-- it needs to be registered in the "declarations" within the AppModule; for TypeScript to find it, the component also needs to be imported at the top. Write the file path _without_ .ts extension on the end
+- it needs to be registered in the "declarations" within the AppModule; for TypeScript to find it, the component also needs to be imported at the top. Write the file path **_without_** .ts extension on the end
