@@ -11,12 +11,13 @@
 </button>
 <!-- <p>{{ serverCreationStatus }}</p> -->
 <!-- <p>{{ allowNewServer }}</p> -->
-<p [innerText]="allowNewServer"></p>
+<!-- <p [innerText]="allowNewServer"></p> -->
 <p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+<app-server></app-server>
+<app-server> </app-server>
 <ng-template #noServer else noServer>
   <p>No server was created!</p>
-  <app-server></app-server>
-  <app-server> </app-server>
+
   <label>Update username</label>
   <input type="text" class="form-control" [(ngModel)]="username" />
   <p>Username: {{ username }}</p>

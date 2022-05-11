@@ -1,4 +1,4 @@
-<p>
-  Interpolate properties: Server with ID {{ serverId }} is {{ serverStatus }}
+<p [ngStyle]="{ backgroundColor: getColor() }">
+  Server with ID {{ serverId }} is {{ serverStatus }}
 </p>
-<p>Interpolate class method: {{ getServerStatus() }}</p>
+<!-- <p>Interpolate class method: {{ getServerStatus() }}</p> -->

@@ -121,3 +121,10 @@
 - local reference - kind of like a marker
   2 options for conditional rendering :
   <img src="./assets/conditionalrendering.png">
+- unlike structural directives, attribute directives don't add or remove elements from the page, they only change the element they were placed on
+
+### Dynamic Styling
+
+- [ngStyle] - brackets are not part of the directive, they are property binding (binding to a property of the directive)
+  <img src="./assets/ngStyle.png">
+  <img src="./assets/ngStyle2.png">
