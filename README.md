@@ -89,3 +89,20 @@
 ### Event binding
 
 - event binding uses parans e.g., (click)
+- example : (click)="onCreateServer()"
+- above example, onCreateServer() would be defined in the component.ts as a method
+- How do you know to which Properties or Events of HTML Elements you may bind? You can basically bind to all Properties and Events - a good idea is to console.log() the element you're interested in to see which properties and events it offers.
+- **Important:** For events, you don't bind to onclick but only to click (=> (click)).
+
+### Passing & Using Data with Event Binding
+
+- input and click events are default provided by the DOM
+- can capture this data with $event as an argument to the method we're passing
+
+### Two Way Data binding/combining forms
+
+- Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel directive. This is done by adding the FormsModule to the imports[] array in the AppModule.
+- You then also need to add the import from @angular/forms in the app.module.ts file:
+- import { FormsModule } from '@angular/forms';
+
+- 2 way event binding combines property and event binding
