@@ -12,7 +12,7 @@
   - attatched by adding @ infront of them and importing them at the type so that it is known to typescript (i.e., import { Component } from '@angular/core';)
 - angular uses components to build web pages and modules to "bundle" them into packages
 
-### decorators
+### Decorators
 
 - attatched by adding @ and importing at top of file
 - informaton stored as metadata that tells angular what to do with the class
@@ -20,12 +20,12 @@
 - has **selector** which is what allows you to use it in other components
 - has **templateUrl** that points to the html file for that component with a **relative path**
 
-### modules
+### Modules
 
 - just creating the file is not enough, components need to be "registered" in the AppModule
 - it needs to be registered in the "declarations" within the AppModule; for TypeScript to find it, the component also needs to be imported at the top. Write the file path **_without_** .ts extension on the end
 
-### custom Components
+### Custom Components
 
 - once a component is added to the module, you can use it as a custom component by creating a custom tag
 
@@ -78,3 +78,11 @@
   2. in component.html, interpolate using {{  }} syntax
 
      <img src="./assets/pic2.png">
+
+### Property Binding
+
+- string interpolation vs [innerText] property
+- cannot combine property binding with string interpolation - no curly braces inside of property binding quotation marks
+- must write typescript code inside property binding
+
+### Event Binding
