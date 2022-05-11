@@ -81,8 +81,11 @@
 
 ### Property Binding
 
+- property binding uses square brackets
 - string interpolation vs [innerText] property
 - cannot combine property binding with string interpolation - no curly braces inside of property binding quotation marks
 - must write typescript code inside property binding
 
-### Event Binding
+### Event binding
+
+- event binding uses parans e.g., (click)
