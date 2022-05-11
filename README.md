@@ -106,3 +106,18 @@
 - import { FormsModule } from '@angular/forms';
 
 - 2 way event binding combines property and event binding
+
+### Directives
+
+- directions to the DOM
+- can be templates or not
+- typically made with attributes?
+- custom and built in directives
+- components are directives
+
+### conditional rendering
+
+- \*ngIf is a structural directive, changes structure of DOM by either adding/not adding
+- local reference - kind of like a marker
+  2 options for conditional rendering :
+  <img src="./assets/conditionalrendering.png">
