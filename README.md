@@ -126,5 +126,15 @@
 ### Dynamic Styling
 
 - [ngStyle] - brackets are not part of the directive, they are property binding (binding to a property of the directive)
+- in component.html
   <img src="./assets/ngStyle.png">
-  <img src="./assets/ngStyle2.png">
+
+  - in component.ts
+    <img src="./assets/ngStyle2.png">
+
+- [ngClass] allows us to dynamically add and remove classes
+
+  - takes object with key/values, keys are the CSS classes and the values are the conditions that determine whether the class should be attatched or not
+    - example [ngClass]="{ online: serverStatus === 'online' }"
+
+- [ngFor]
