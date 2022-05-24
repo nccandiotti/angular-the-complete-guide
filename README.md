@@ -138,3 +138,8 @@
     - example [ngClass]="{ online: serverStatus === 'online' }"
 
 - [ngFor]
+
+## Component Communication
+
+- chaining inputs and outputs so sibling elements can "talk"
+- creating services for components that are particularly distanto n the family tree
