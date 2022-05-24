@@ -143,3 +143,12 @@
 
 - chaining inputs and outputs so sibling elements can "talk"
 - creating services for components that are particularly distanto n the family tree
+
+### view ViewEncapsulation
+
+- for styling, ensures that only the component that you defined styles for receives those styles (emulated is default, this can be overridden by importing ViewEncapsulation and adding .none or .shadowdom (native))
+- none : removes encapsulation / disabled
+- ShadowDom
+- emulated (default)
+
+###
